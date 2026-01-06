@@ -1,5 +1,5 @@
 # INFO 2000 – Informatics I  
-University of Georgia | Spring 2023
+University of Georgia | Spring 2024
 
 This repository contains selected coursework from **INFO 2000: Informatics I**, completed during my undergraduate studies at the University of Georgia.
 
