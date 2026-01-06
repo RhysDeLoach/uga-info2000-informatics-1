@@ -1,0 +1,70 @@
+<!-- Page Initialization -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Center Home Page Header */
+        h1 {
+            text-align: center;
+        }
+        /* Center Navigation Links */
+        nav ul {
+            text-align: center;
+            padding: 0;
+        }
+        /* Separate Navigation Links and Organize Them Inline */
+        nav ul li{
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+        }
+        /* Centering and Spacing Entry Boxes for Add Product */
+        div {
+        margin: 20px;
+        text-align: center;
+        }
+        /* Center Intro Paragraph */
+        p {
+            text-align: center;
+        }
+        /* Center the table */
+        table {
+            margin: 0 auto; /* Center the table horizontally */
+        }
+    </style>
+
+</head>
+<body>
+    <!-- #Home Page Header -->
+    <h1> 
+        {% block header %} Welcome to Rhys' E-Commerce! {% endblock %}
+    </h1>
+    <header>
+        <!-- Website Navigation Links -->
+        <nav>
+            <ul>
+                <li> <a href="{{url_for('home')}}"> Home </a> </li>
+                <li> <a href="{{url_for('add')}}"> Add Product </a> </li>
+                <li> <a href="{{url_for('search')}}"> Search Products </a> </li>
+            </ul>  
+        </nav>
+    <header>
+        {% block content %}
+        <!-- Home Page Intro -->
+        <p>
+            Welcome to Rhys' E-Commerce, your one-stop destination for all your <br>
+            online shopping needs! At Rhys' E-Commerce, we pride ourselves on <br>
+            offering a diverse range of products, from electronics and gadgets to <br>
+            fashion and home decor, all curated with quality and affordability in mind. <br>
+            Whether you're searching for the latest tech innovations or timeless <br>
+            fashion pieces, our user-friendly platform makes it easy to browse, shop, <br>
+            and checkout hassle-free. With secure payment options and prompt <br>
+            delivery, shopping with us ensures a seamless and enjoyable experience <br>
+            every time. Explore our wide selection today and discover the <br>
+            convenience of online shopping at Rhys' E-Commerce! <br>    
+        </p>
+        {% endblock %}
+</body>
+</html>

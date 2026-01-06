@@ -1,0 +1,17 @@
+Dear [first_name] [last_name],
+
+On behalf of the University of Georgia community, we are thrilled to welcome you to our campus! We are excited to have you join us as a member of the Bulldog family, and we hope that your time here is filled with growth, exploration, and meaningful experiences.
+
+As you embark on this exciting journey, we would like to offer some suggestions of places to visit in and around Athens, Georgia. These destinations are not only fun and interesting, but they also give you a chance to experience the rich history and culture of our beautiful city.
+
+	1. [attraction1]
+	2. [attraction2]
+	3. [attraction3]
+
+We hope that you find these suggestions helpful, and we encourage you to explore all that Athens has to offer. Once again, welcome to the University of Georgia! We look forward to getting to know you and watching you thrive during your time here.
+
+Sincerely,
+
+[from_sender]
+
+[sender_title]

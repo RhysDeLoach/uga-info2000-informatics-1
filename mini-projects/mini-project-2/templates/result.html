@@ -1,0 +1,37 @@
+{%extends 'home.html' %}
+
+{% block header %} Search Result {% endblock %}
+
+{% block content %}
+        <table border="1">
+            <thead>
+                <!-- Table Headers -->
+                <tr> 
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Item ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table Data from Database -->
+                {% for item in data %}
+                <tr>
+                    <td>{{item.CATEGORY}}</td>
+                    <td>{{item.DESCRIPTION}}</td>
+                    <td>{{item.PRICE}}</td>
+                    <td>{{item.ID}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <!-- Home Page Function -->
+        <script>
+            function Home() {
+                window.location.href = '/';
+            }
+        </script>
+        <div>
+            <input type="submit" value="OK" onclick="Home()">
+        </div>
+{% endblock %}

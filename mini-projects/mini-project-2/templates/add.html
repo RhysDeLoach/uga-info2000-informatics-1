@@ -1,0 +1,24 @@
+{%extends 'home.html' %}
+
+{% block header %} Add Products {% endblock %}
+
+{% block content %} 
+    <form action="{{url_for('add')}}" method="post">
+        <!-- Product Data Submit -->
+        <div>
+            <label for="cat">Product Category</label>
+            <input id="cat" name = "category" type="text" autofocus
+        </div>
+        <div>
+            <label for="desc.">Product Description</label>
+            <input id="desc." name = "description" type="text" autofocus
+        </div>
+        <div>
+            <label for="price">Price $</label>
+            <input id="price" name = "price" type="text" autofocus
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+{% endblock %}

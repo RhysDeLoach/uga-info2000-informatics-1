@@ -1,0 +1,35 @@
+###############################################################################
+# File Name: assignment1B.txt
+#
+# Description: This program showcases shell commands by creating text files and
+# directories and organizing them
+#
+# Record of Revisions (Date | Author | Change):
+# 01/25/2024 | Rhys DeLoach | Initial creation
+###############################################################################
+
+mkdir dawgs # Make dawgs directory 
+cd dawgs # Opens dawgs directory
+touch KendallMilton.txt KamariLassiter.txt OscarDelp.txt RaraThomas.txt  DominicLovett.txt JalonWalker.txt CarsonBeck.txt MykelWilliams.txt JacksonMuschamp.txt DaijunEdwards.txt CJAllen.txt KirbySmart.txt MikeBobo.txt WillMuschamp.txt # Creates player/coach name text files
+mkdir players coaches # Creates players and coaches directories
+mv KirbySmart.txt MikeBobo.txt WillMuschamp.txt coaches # Move coach files to coaches directory
+mv *txt players # Move the rest to players directory
+mv coaches coachesAndStaff # Rename coaches directory
+ls -l # List directory contents
+cd players # Open players directory
+pwd # Print current directory path
+ls # List files in directory
+cd ../coachesAndStaff # Open coaches and staff directory
+ls # List files in directory
+cd ../ # Open parent directory
+mkdir rivals # Make rivals directory
+cd rivals # Open rivals directory
+touch alabama.txt florida.txt # Create rivals text files
+cd ../ # Open parent directory
+mkdir medals # Create medals directory
+cd medals # Open medals directory
+touch 2022.txt 2021.txt 1980.txt 1942.txt # Create medals text files
+cd ../ # Open parent directory
+mkdir allFiles # Create all files directory
+cp players/*.txt coachesAndStaff/*.txt medals/*.txt rivals/*.txt allFiles/ # Copy all text files in subdirectories to all files directory
+rm -r rivals # Remove rivals directory

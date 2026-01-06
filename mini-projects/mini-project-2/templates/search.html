@@ -1,0 +1,16 @@
+{%extends 'home.html' %}
+
+{% block header %} Search Products {% endblock %}
+
+{% block content %}
+    <form action="{{url_for('search')}}" method="post">
+        <!-- Category Search Bar -->
+        <div> 
+            <label for="search">Search Category or Leave Blank to Search All</label>
+            <input id="search" name = "search" type="text" autofocus
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+{% endblock %}

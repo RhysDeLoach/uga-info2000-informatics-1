@@ -1,0 +1,19 @@
+###############################################################################
+# File Name: assignment_01a.txt
+#
+# Description: This program showcases shell commands by organizing a directory
+# into categorized subdirectories based on filenames
+#
+# Record of Revisions (Date | Author | Change):
+# 01/25/2024 | Rhys DeLoach | Initial creation
+###############################################################################
+
+mv disorganized_structure organized_structure # Renames disorganized directory
+cd organized_structure # Opens organized directory
+mkdir entertainment recipes sports technology travel # Creates category directories
+mv $(ls|grep recipes_) recipes # Move recipe files into recipe directory
+mv $(ls|grep technology_) technology # Move technology files into technology directory
+mv $(ls|grep travel_) travel # Move travel files into travel directory
+mv $(ls|grep entertainment_) entertainment # Move entertainment files into entertainment directory
+mv $(ls|grep sports_) sports # Move sports files into sports directory
+ls recipes entertainment sports technology travel >> output.txt # Lists the contents of all directories in output.txt
